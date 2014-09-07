@@ -7,11 +7,11 @@ The project uses Graphiz !
 To test, gi into test directory and perform the following steps :
 
 
-cd test/
-gcc -finstrument-functions test.c instrument.c -o outbin
-./outbin
-cd pvtrace/
-make
-cp pvtrace test/
-./pvtrace outbin
-dot -Tpdf graph.dot -o out.pdf
+1. cd test/
+2. gcc -finstrument-functions test.c instrument.c -o outbin
+3. ./outbin
+4. cd pvtrace/
+5. make
+6. cp pvtrace test/
+7. ./pvtrace outbin
+8. dot -Tpdf graph.dot -o out.pdf
